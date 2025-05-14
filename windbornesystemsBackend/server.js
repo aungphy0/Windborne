@@ -24,7 +24,7 @@ app.post('/api/message', async(req, res) => {
 });
 
 app.get('/windborne/:jsonFile', async(req, res) => {
-	const {jsonFile} = req.params; 
+	const { jsonFile }  = req.params; 
 
 	try{
 	    const fetch = (await import('node-fetch')).default;
