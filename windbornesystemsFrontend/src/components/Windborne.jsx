@@ -26,7 +26,7 @@ const Windborne = () => {
   const [selectedOption, setSelectedOption] = useState('00');
 
   useEffect(() => {
-    const url = `http://localhost:3001/windborne/${selectedOption}`;
+    const url = `https://windborne-rm80.onrender.com/windborne/${selectedOption}`;
     fetch(url)
       .then((response) => {
         if (!response.ok) throw new Error('Failed to fetch');
